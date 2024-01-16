@@ -17,10 +17,10 @@ namespace Forge.Threading
         /// </summary>
         /// <returns>IServiceCollection</returns>
 #if NET461 || NETSTANDARD2_0
-        public static IServiceCollection AddForgeLog4NetLogging(this IServiceCollection services, Action<ThreadPoolOptions> configure)
+        public static IServiceCollection AddForgeThreading(this IServiceCollection services, Action<ThreadPoolOptions> configure)
 #else
 #nullable enable
-        public static IServiceCollection AddForgeLog4NetLogging(this IServiceCollection services, Action<ThreadPoolOptions>? configure)
+        public static IServiceCollection AddForgeThreading(this IServiceCollection services, Action<ThreadPoolOptions>? configure)
 #nullable disable
 #endif
         {
